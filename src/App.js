@@ -5,6 +5,7 @@ import DistanceSearch from './components/DistanceSearch';
 function App() {
   return (
     <div>
+      <CityFinder />
       <DistanceSearch />
     </div>
   );
