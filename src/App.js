@@ -1,10 +1,11 @@
 import './App.css';
 import CityFinder from './components/CityFinder';
+import DistanceSearch from './components/DistanceSearch';
 
 function App() {
   return (
-    <div className="App">
-      <CityFinder />
+    <div>
+      <DistanceSearch />
     </div>
   );
 }
