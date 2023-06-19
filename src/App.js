@@ -4,7 +4,10 @@ import DistanceSearch from './components/DistanceSearch';
 
 function App() {
   return (
-    <div>
+    <div className="container">
+      <div className="nav">
+        ZipCity
+      </div>
       <CityFinder />
       <DistanceSearch />
     </div>

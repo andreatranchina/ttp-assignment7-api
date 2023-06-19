@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-image: url(https://i.ibb.co/bm99s8x/spain-mountains.jpg);
+  /* display:flex; */
   color: white;
+  /* align-items: center;
+  justify-content: center; */
+  height:100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-family: "Pacifico", cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.nav{
+  background-image: linear-gradient(rgb(94, 139, 183), rgb(51, 127, 118));
+  background-image: linear-gradient(rgb(197, 208, 206), rgb(51, 127, 118), rgb(90, 143, 135));
+  padding: 0.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  box-shadow: 0.1rem 0.1rem rgb(51, 127, 118);
+  /* text-align: left; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.container{
+  width: 100%;
+}
+
+.container-search-by-zip{
+  width: 100%;
+  margin-bottom: 8%;
+  margin-top: 8%;
+}
+
+.form-one-container{
+  display: inline-block;
+}
+
+.response-city{
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.form-two-container{
+  display:inline-block;
+}
+
+.response-search-distance{
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.btn-search-by-zip{
+  padding: 10% 15%;
+  border: 3px solid rgb(51, 127, 118);
+  border-radius: 0 0 1rem 1rem;
+  background-color: rgb(51, 127, 118);
+  color: white;
+  display: block;
+  font-size: 110%;
+  transition: 500ms ease;
+  box-shadow: none;
+  width: 100%;
+  font-family: "Pacifico", cursive;
+  background-image: linear-gradient(rgb(197, 208, 206), rgb(51, 127, 118), rgb(90, 143, 135));
+}
+
+.btn-distance{
+  padding: 10% 15%;
+  border: 3px solid rgb(51, 127, 118);
+  border-radius: 0 0 1rem 1rem;
+  background-color: rgb(51, 127, 118);
+  color: white;
+  display: block;
+  font-size: 110%;
+  transition: 500ms ease;
+  box-shadow: none;
+  width: 100%;
+  font-family: "Pacifico", cursive;
+  background-image: linear-gradient(rgb(197, 208, 206), rgb(51, 127, 118), rgb(90, 143, 135));
+}
+
+.btn-distance:hover{
+  border-color: white;
+  transition:500ms ease;
+  cursor: pointer;
+}
+
+.btn-search-by-zip:hover{
+  border-color: white;
+  transition:500ms ease;
+  cursor: pointer;
+}
+
+.input-zip-one{
+  padding: 10% 15%;
+  border-radius: 1rem 1rem 0 0;
+  border: 3px solid rgb(51, 127, 118);
+  font-size: 100%;
+  width: 67%;
+  display: block;
+}
+
+input:focus{
+  outline: none;
+}
+
+.input-zip{
+  padding: 10% 15%;
+  border-radius: 1rem 1rem 0 0;
+  border: 3px solid rgb(51, 127, 118);
+  font-size: 100%;
+  width: 67%;
+}
+
+.input-zip-two{
+  padding: 10% 15%;
+  border: 3px solid rgb(51, 127, 118);
+  font-size: 100%;
+  width: 67%;
+}
+
+/**********MEDIA QUERIES****************/
+@media only screen and (max-width: 900px) {
+  .nav{
+    margin-bottom: 5rem;
   }
 }
